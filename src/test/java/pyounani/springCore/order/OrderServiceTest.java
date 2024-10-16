@@ -1,18 +1,24 @@
 package pyounani.springCore.order;
 
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import pyounani.springCore.AppConfig;
 import pyounani.springCore.member.Grade;
 import pyounani.springCore.member.Member;
 import pyounani.springCore.member.MemberService;
-import pyounani.springCore.member.MemberServiceImpl;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class OrderServiceTest {
 
-    private final MemberService memberService = new MemberServiceImpl();
-    private final OrderService orderService = new OrderServiceImpl();
+    MemberService memberService;
+    OrderService orderService;
+
+    @BeforeEach
+    public void beforeEach() {
+        AppConfig appConfig = new AppConfig();
+        memberService = appConfig.memberService();
+        orderService = appConfig.orderService();
+    }
 
     @Test
     void createOrder() {
