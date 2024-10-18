@@ -1,4 +1,4 @@
-package pyounani.springCore.scan;
+package pyounani.springCore.scan.filter;
 import java.lang.annotation.*;
 
 @Target(ElementType.TYPE)

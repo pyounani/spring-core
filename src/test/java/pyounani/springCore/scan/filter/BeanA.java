@@ -1,4 +1,4 @@
-package pyounani.springCore.scan;
+package pyounani.springCore.scan.filter;
 
 @MyIncludeComponent
 public class BeanA {

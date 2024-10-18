@@ -1,4 +1,4 @@
-package pyounani.springCore.scan;
+package pyounani.springCore.scan.filter;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
