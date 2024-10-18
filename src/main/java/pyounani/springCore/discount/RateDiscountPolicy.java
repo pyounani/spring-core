@@ -1,10 +1,12 @@
 package pyounani.springCore.discount;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import pyounani.springCore.member.Grade;
 import pyounani.springCore.member.Member;
 
 @Component
+@Primary
 public class RateDiscountPolicy implements DiscountPolicy {
 
     private int discountPercent = 10;
